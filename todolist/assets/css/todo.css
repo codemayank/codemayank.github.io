@@ -1,19 +1,23 @@
-h1{
-	background: #499979;
-	text-transform: uppercase;
-	font-weight: normal;
-	font-size: 24px;
-	margin: 0;
-	padding: 10px 20px;
-	color: #fff;
-}
 
 body{
 	font-family: Roboto;
 	background: #8e9eab;  /* fallback for old browsers */
 	background: -webkit-linear-gradient(to right, #eef2f3, #8e9eab);  /* Chrome 10-25, Safari 5.1-6 */
 	background: linear-gradient(to right, #eef2f3, #8e9eab); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+	font-size: 24px;
 }
+
+
+h1{
+	background: #499979;
+	text-transform: uppercase;
+	font-weight: normal;
+	font-size: 1em;
+	margin: 0;
+	padding: 10px 20px;
+	color: #fff;
+}
+
 
 .fa-thumb-tack{
 	float: right;
@@ -26,7 +30,7 @@ ul{
 }
 
 input{
-	font-size: 18px;
+	font-size: 0.75em;
 	background-color: #f7f7f7;
 	color: #499979;
 	width: 100%;
@@ -79,4 +83,26 @@ li:hover span{
 .completed{
 	color: gray;
 	text-decoration: line-through; 
+}
+
+@media (min-width: 500px) {
+  #container {
+  		width: 100%;
+    	font-size: 0.5em;
+  }
+}
+
+@media screen and (max-width: 500px) and (min-width: 320px) {
+  #container {
+  		width: 100%;
+    	font-size: 0.5em;
+  }
+}
+
+@media (max-width: 320px){
+	#container {
+  		width: 100%;
+    	font-size: 0.4em;
+  }
+}
 }
