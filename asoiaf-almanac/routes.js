@@ -43,7 +43,7 @@
 							let inpObj = {
 								urlPre : 'https://www.anapioficeandfire.com/api/characters?page=',
 								pageLimiter : 107,//107
-								initialValue : 0,
+								initialValue : 1,
 								urlSuf : '&pageSize=20'
 							};
 							return dataService.getRequestedData(inpObj)
